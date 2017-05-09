@@ -4,15 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="me.texy.tableview.MainActivity">
+    tools:context="me.texy.tableview.demo.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <me.texy.tableview.TableLayout
+            android:id="@+id/table_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:column_count="7"
+            app:item_height="5dp"
+            app:column_interval="1dp"
+            app:item_width="30dp"
+            app:row_count="90"
+            app:row_interval=".33dp"
+            app:row_interval_color="#efefef"></me.texy.tableview.TableLayout>
+    </ScrollView>
+
 
 </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TableLayout">
+        <attr name="item_width" format="dimension"></attr>
+        <attr name="item_height" format="dimension"></attr>
+        <attr name="column_count" format="integer"></attr>
+        <attr name="row_count" format="integer"></attr>
+        <attr name="column_interval" format="dimension"></attr>
+        <attr name="row_interval" format="dimension"></attr>
+        <attr name="column_interval_color" format="color"></attr>
+        <attr name="row_interval_color" format="color"></attr>
+        <attr name="column_divider_first" format="boolean"></attr>
+    </declare-styleable>
+</resources>
