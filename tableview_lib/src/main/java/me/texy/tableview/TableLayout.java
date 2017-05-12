@@ -12,6 +12,9 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
+import static me.texy.tableview.TableLayout.DividerInfo.DIVIDER_COLOR_INDEX;
+import static me.texy.tableview.TableLayout.DividerInfo.DIVIDER_WIDTH_INDEX;
+
 /**
  * Created by xinyuanzhong on 2017/5/5.
  */
@@ -40,7 +43,7 @@ public class TableLayout extends ViewGroup {
 
     private int rowCount;
 
-    private List<TableItem> tableItems;
+    private List<TableItem> tableItems = new ArrayList<>();
 
     private boolean itemCanCross = true;
 
@@ -59,7 +62,7 @@ public class TableLayout extends ViewGroup {
 
     public void setColumnDividerGenerator(DividerGenerator columnDividerGenerator) {
         this.columnDividerGenerator = columnDividerGenerator;
-        dividerInfo.prepareDividers(Axis.X, rowDividerGenerator);
+        dividerInfo.prepareDividers(Axis.X, columnDividerGenerator);
     }
 
     enum Axis {
@@ -117,33 +120,30 @@ public class TableLayout extends ViewGroup {
                 itemWidth = (((widthSize - getPaddingLeft() - getPaddingRight())
                         - dividerInfo.columnDividersWidth)) / columnCount;
             }
-
             measureChild(child,
                     MeasureSpec.makeMeasureSpec((int) itemWidth, MeasureSpec.EXACTLY),
-                    MeasureSpec.makeMeasureSpec(getItemVerticalHeight(item), MeasureSpec.EXACTLY));
+                    MeasureSpec.makeMeasureSpec((int) getItemVerticalHeight(item), MeasureSpec.EXACTLY));
         }
 
-        setMeasuredDimension(widthMode == MeasureSpec.EXACTLY ? widthSize
-                        : (int) (columnCount * itemWidth
-                        + dividerInfo.columnDividersWidth
+        setMeasuredDimension(
+                widthMode == MeasureSpec.EXACTLY ? widthSize
+                        : (int) (columnCount * itemWidth + dividerInfo.columnDividersWidth
                         + getPaddingLeft() + getPaddingRight()),
                 heightMode == MeasureSpec.EXACTLY ? heightSize
-                        : (int) (rowCount * itemHeight
-                        + dividerInfo.rowDividersWidth
+                        : (int) (rowCount * itemHeight + dividerInfo.rowDividersWidth
                         + getPaddingBottom() + getPaddingTop()));
     }
 
-    private int getItemVerticalHeight(TableItem item) {
-        int Divider = item.getInterval().getEndIndex() - item.getInterval().getStartIndex();
-        if (!itemCanCross) {
-            if (Divider > 0) {
-                throw new IllegalArgumentException(
-                        "The table item Divider must less than 1 when item can not cross!");
-            }
-            return (int) itemHeight;
+    private double getItemVerticalHeight(TableItem item) {
+        int crossCount = item.getInterval().getEndIndex() - item.getInterval().getStartIndex();
+        if (!itemCanCross || crossCount == 0) {
+            if (crossCount == 0) return itemHeight;
+            throw new IllegalArgumentException(
+                    "The table item Divider must less than 1 when item can not cross!");
         } else {
-            return (int) (getTopOfIndex(item.getInterval().getEndIndex())
-                    - getTopOfIndex(item.getInterval().getStartIndex()));
+            return getTopOfIndex(item.getInterval().getEndIndex() - 1)
+                    - getTopOfIndex(item.getInterval().getStartIndex())
+                    + itemHeight;
         }
     }
 
@@ -154,10 +154,12 @@ public class TableLayout extends ViewGroup {
         }
 
         for (TableItem tableItem : tableItems) {
+            double topOfIndex = getTopOfIndex(tableItem.getInterval().getStartIndex());
+
             int left = (int) getLeftOfIndex(tableItem.getColumnIndex());
             int right = (int) (left + itemWidth);
-            int top = (int) getTopOfIndex(tableItem.getInterval().getStartIndex());
-            int bottom = top + getItemVerticalHeight(tableItem);
+            int top = (int) topOfIndex;
+            int bottom = (int) (topOfIndex + getItemVerticalHeight(tableItem));
 
             tableItem.getView().layout(left, top, right, bottom);
         }
@@ -165,12 +167,12 @@ public class TableLayout extends ViewGroup {
 
     private double getTopOfIndex(int index) {
         return getPaddingTop() + index * itemHeight
-                + dividerInfo.getDividerWidthBefore(Axis.Y, index);
+                + dividerInfo.getDividersWidthBefore(Axis.Y, index);
     }
 
     private double getLeftOfIndex(int index) {
         return getPaddingLeft() + index * itemWidth
-                + dividerInfo.getDividerWidthBefore(Axis.X, index);
+                + dividerInfo.getDividersWidthBefore(Axis.X, index);
     }
 
     public void addItem(TableItem tableItem) {
@@ -206,8 +208,8 @@ public class TableLayout extends ViewGroup {
     private void drawRowDivider(Canvas canvas) {
         int[][] rowDividers = dividerInfo.rowDividers;
         for (int i = 0; i < rowDividers.length; i++) {
-            int rowDivider = rowDividers[i][0];
-            int rowDividerColor = rowDividers[i][1];
+            int rowDivider = rowDividers[i][DIVIDER_WIDTH_INDEX];
+            int rowDividerColor = rowDividers[i][DIVIDER_COLOR_INDEX];
 
             if (rowDividerColor != 0) {
                 dividerPaint.setColor(rowDividerColor);
@@ -225,8 +227,8 @@ public class TableLayout extends ViewGroup {
     private void drawColumnDivider(Canvas canvas) {
         int[][] columnDividers = dividerInfo.columnDividers;
         for (int i = 0; i < columnDividers.length; i++) {
-            int columnDivider = columnDividers[i][0];
-            int columnDividerColor = columnDividers[i][1];
+            int columnDivider = columnDividers[i][DIVIDER_WIDTH_INDEX];
+            int columnDividerColor = columnDividers[i][DIVIDER_COLOR_INDEX];
 
             if (columnDividerColor != 0) {
                 dividerPaint.setColor(columnDividerColor);
@@ -241,7 +243,10 @@ public class TableLayout extends ViewGroup {
         }
     }
 
-    private class DividerInfo {
+    public class DividerInfo {
+        public static final int DIVIDER_WIDTH_INDEX = 0;
+        public static final int DIVIDER_COLOR_INDEX = 1;
+
         public int[][] columnDividers;
 
         public int[][] rowDividers;
@@ -250,10 +255,11 @@ public class TableLayout extends ViewGroup {
 
         public double rowDividersWidth;
 
-        public double getDividerWidthBefore(Axis axis, int index) {
+        public double getDividersWidthBefore(Axis axis, int index) {
             double result = 0.0;
-            for (int i = 0; i < index; i++) {
-                result += axis == Axis.X ? columnDividers[i][0] : rowDividers[i][0];
+            for (int i = 0; i < index + 1; i++) {
+                result += axis == Axis.X ? columnDividers[i][DIVIDER_WIDTH_INDEX] :
+                        rowDividers[i][DIVIDER_WIDTH_INDEX];
             }
             return result;
         }
@@ -263,18 +269,19 @@ public class TableLayout extends ViewGroup {
                 columnDividersWidth = 0;
                 for (int i = 0; i < columnCount + 1; i++) {
                     columnDividers[i] = dividerGenerator.generateDivider(i);
-                    columnDividersWidth += columnDividers[i][0];
+                    columnDividersWidth += columnDividers[i][DIVIDER_WIDTH_INDEX];
                 }
             } else {
                 rowDividersWidth = 0;
                 for (int i = 0; i < rowCount + 1; i++) {
                     rowDividers[i] = dividerGenerator.generateDivider(i);
-                    rowDividersWidth += rowDividers[i][0];
+                    rowDividersWidth += rowDividers[i][DIVIDER_WIDTH_INDEX];
                 }
             }
         }
 
         public void init() {
+            // TODO: 2017/5/10 add default size of divider
             columnDividers = new int[columnCount + 1][2];
             rowDividers = new int[rowCount + 1][2];
 

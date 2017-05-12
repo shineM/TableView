@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="me.texy.tableview.demo.MainActivity">
+    android:orientation="vertical"
+    >
 
-    <ScrollView
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="50dp"
+        android:elevation="5dp"
+        android:background="#ffffff"></android.support.v7.widget.Toolbar>
 
-        <me.texy.tableview.TableLayout
-            android:id="@+id/table_layout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:column_count="7"
-            app:item_height="5dp"
-            app:column_interval="1dp"
-            app:item_width="30dp"
-            app:row_count="90"
-            app:row_interval=".33dp"
-            app:row_interval_color="#efefef"></me.texy.tableview.TableLayout>
-    </ScrollView>
-
-
-</android.support.constraint.ConstraintLayout>
+    <me.texy.tableview.TableLayout
+        android:id="@+id/table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></me.texy.tableview.TableLayout>
+</LinearLayout>
