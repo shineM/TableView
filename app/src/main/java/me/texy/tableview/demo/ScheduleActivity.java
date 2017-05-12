@@ -1,7 +1,6 @@
 package me.texy.tableview.demo;
 
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,7 +14,6 @@ import me.texy.tableview.DividerGenerator;
 import me.texy.tableview.Interval;
 import me.texy.tableview.TableItem;
 import me.texy.tableview.TableLayout;
-import me.texy.tableview.demo.R;
 
 public class ScheduleActivity extends BaseActivity {
     TableLayout tableLayout;
@@ -87,17 +85,18 @@ public class ScheduleActivity extends BaseActivity {
         tableLayout.setColumnDividerGenerator(new DividerGenerator() {
             @Override
             public int[] generateDivider(int index) {
-                return new int[]{2,0};
+                return new int[]{2, 0};
             }
         });
         tableLayout.addItems(itemList);
     }
+
     private class MyTableItem extends TableItem {
         @Override
         public View initView() {
             View view = LayoutInflater.from(ScheduleActivity.this).inflate(me.texy.tableview.demo.R.layout.table_item, null);
             int[] bgs = new int[]{me.texy.tableview.demo.R.drawable.corner_blue, me.texy.tableview.demo.R.drawable.corner_gray, me.texy.tableview.demo.R.drawable.corner_pink};
-            view.setBackground(getResources().getDrawable(bgs[getColumnIndex()%3]));
+            view.setBackground(getResources().getDrawable(bgs[getColumnIndex() % 3]));
             TextView textView = (TextView) view.findViewById(me.texy.tableview.demo.R.id.item_text);
             textView.setText("程咬金");
             TextView textView2 = (TextView) view.findViewById(me.texy.tableview.demo.R.id.item_text2);
@@ -107,7 +106,7 @@ public class ScheduleActivity extends BaseActivity {
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Toast.makeText(getApplicationContext(),"程咬金 八年级 待上课",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "程咬金 八年级 待上课", Toast.LENGTH_SHORT).show();
                 }
             });
             return view;

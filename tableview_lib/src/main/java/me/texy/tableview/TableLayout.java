@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
+
 import static me.texy.tableview.TableLayout.DividerInfo.DIVIDER_COLOR_INDEX;
 import static me.texy.tableview.TableLayout.DividerInfo.DIVIDER_WIDTH_INDEX;
 
