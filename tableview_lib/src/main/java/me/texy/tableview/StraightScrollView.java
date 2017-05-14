@@ -1,12 +1,14 @@
 package me.texy.tableview;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.support.annotation.AttrRes;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.EdgeEffect;
 import android.widget.FrameLayout;
 
@@ -23,16 +25,91 @@ public class StraightScrollView extends FrameLayout {
     private EdgeEffect mEdgeGlowTop;
     private EdgeEffect mEdgeGlowBottom;
 
+    private boolean mFillViewport;
     public StraightScrollView(@NonNull Context context) {
-        super(context);
+        this(context, null);
     }
 
     public StraightScrollView(@NonNull Context context, @Nullable AttributeSet attrs) {
-        super(context, attrs);
+        this(context, attrs, 0);
     }
 
     public StraightScrollView(@NonNull Context context, @Nullable AttributeSet attrs, @AttrRes int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        initScrollView();
+
+        final TypedArray a = context.obtainStyledAttributes(
+                attrs, R.styleable.HorizontalScrollView, defStyleAttr, 0);
+
+        setFillViewport(a.getBoolean(R.styleable.HorizontalScrollView_fillViewport, false));
+
+        a.recycle();
+    }
+
+    private void initScrollView() {
+
+    }
+
+    @Override
+    public void addView(View child) {
+        if (getChildCount() > 0) {
+            throw new IllegalStateException("StraightScrollView can host only one direct child");
+        }
+
+        super.addView(child);
+    }
+
+    @Override
+    public void addView(View child, int index) {
+        if (getChildCount() > 0) {
+            throw new IllegalStateException("StraightScrollView can host only one direct child");
+        }
+
+        super.addView(child, index);
+    }
+
+    @Override
+    public void addView(View child, ViewGroup.LayoutParams params) {
+        if (getChildCount() > 0) {
+            throw new IllegalStateException("StraightScrollView can host only one direct child");
+        }
+
+        super.addView(child, params);
+    }
+
+    @Override
+    public void addView(View child, int index, ViewGroup.LayoutParams params) {
+        if (getChildCount() > 0) {
+            throw new IllegalStateException("StraightScrollView can host only one direct child");
+        }
+
+        super.addView(child, index, params);
+    }
+
+    /**
+     * Indicates whether this HorizontalScrollView's content is stretched to
+     * fill the viewport.
+     *
+     * @return True if the content fills the viewport, false otherwise.
+     * @attr ref android.R.styleable#HorizontalScrollView_fillViewport
+     */
+    public boolean isFillViewport() {
+        return mFillViewport;
+    }
+
+    /**
+     * Indicates this HorizontalScrollView whether it should stretch its content width
+     * to fill the viewport or not.
+     *
+     * @param fillViewport True to stretch the content's width to the viewport's
+     *                     boundaries, false otherwise.
+     * @attr ref android.R.styleable#HorizontalScrollView_fillViewport
+     */
+    public void setFillViewport(boolean fillViewport) {
+        if (fillViewport != mFillViewport) {
+            mFillViewport = fillViewport;
+            requestLayout();
+        }
     }
 
     @Override
