@@ -6,27 +6,30 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="me.texy.tableview.demo.ElementsActivity">
+
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:elevation="5dp"
-        android:background="#ffffff"></android.support.v7.widget.Toolbar>
-
-    <ScrollView
+        android:background="#ffffff"
+        android:elevation="5dp"></android.support.v7.widget.Toolbar>
+    <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <me.texy.tableview.TableLayout
-            android:id="@+id/table_layout"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:column_count="7"
-            app:column_interval="1dp"
-            app:item_height="10dp"
-            app:row_count="90"
-            app:row_interval="1dp"
-            app:row_interval_color="#efefef"></me.texy.tableview.TableLayout>
+            android:layout_height="match_parent">
 
-    </ScrollView>
+            <me.texy.tableview.demo.tableview.TableLayout
+                android:id="@+id/table_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:column_count="18"
+                app:item_height="60dp"
+                app:item_width="50dp"
+                app:row_count="10"></me.texy.tableview.demo.tableview.TableLayout>
+
+        </ScrollView>
+
+    </HorizontalScrollView>
 </LinearLayout>

@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TableView.iml" filepath="$PROJECT_DIR$/TableView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/tableview_lib/tableview_lib.iml" filepath="$PROJECT_DIR$/tableview_lib/tableview_lib.iml" />
     </modules>
   </component>
 </project>

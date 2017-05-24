@@ -1,0 +1,2905 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+
+    <element id="1">
+
+        <elementid>1</elementid>
+
+        <elementname>氢</elementname>
+
+        <symbol>H</symbol>
+
+        <atomicnumber>1</atomicnumber>
+
+        <position>第一周期第ⅠA</position>
+
+        <atomicmass>1.008</atomicmass>
+
+        <englishname>Hydrogen</englishname>
+
+        <pinyin>qīng</pinyin>
+
+        <types>非金属</types>
+
+        <configuration><![CDATA[1s<sup>1</sup> ]]></configuration>
+
+    </element>
+
+    <element id="2">
+
+        <elementid>2</elementid>
+
+        <elementname>氦</elementname>
+
+        <symbol>He</symbol>
+
+        <atomicnumber>2</atomicnumber>
+
+        <position>第一周期第0族</position>
+
+        <atomicmass>4.003</atomicmass>
+
+        <englishname>helium</englishname>
+
+        <pinyin>hài</pinyin>
+
+        <types>惰性气体</types>
+
+        <configuration><![CDATA[1s<sup>2</sup>]]></configuration>
+
+    </element>
+
+    <element id="3">
+
+        <elementid>3</elementid>
+
+        <elementname>锂</elementname>
+
+        <symbol>Li</symbol>
+
+        <atomicnumber>3</atomicnumber>
+
+        <position>第二周期第ⅠA族</position>
+
+        <atomicmass>6.941</atomicmass>
+
+        <englishname>lithium</englishname>
+
+        <pinyin>lǐ</pinyin>
+
+        <types>碱金属</types>
+
+        <configuration><![CDATA[1s<sup>2</sup>2s<sup>1</sup>]]></configuration>
+
+    </element>
+
+    <element id="4">
+
+        <elementid>4</elementid>
+
+        <elementname>铍</elementname>
+
+        <symbol>Be</symbol>
+
+        <atomicnumber>4</atomicnumber>
+
+        <position>第二周期第ⅡA族</position>
+
+        <atomicmass>9.012</atomicmass>
+
+        <englishname>beryllium</englishname>
+
+        <pinyin>pí</pinyin>
+
+        <types>碱土金属</types>
+
+        <configuration><![CDATA[1s<sup>2</sup>2s<sup>2</sup>]]></configuration>
+
+    </element>
+
+    <element id="5">
+
+        <elementid>5</elementid>
+
+        <elementname>硼</elementname>
+
+        <symbol>B</symbol>
+
+        <atomicnumber>5</atomicnumber>
+
+        <position>第二周期第ⅢA族</position>
+
+        <atomicmass>10.81</atomicmass>
+
+        <englishname>boron</englishname>
+
+        <pinyin>péng</pinyin>
+
+        <types>类金属</types>
+
+        <configuration><![CDATA[2s<sup>2</sup>2p<sup>1</sup>]]></configuration>
+
+    </element>
+
+    <element id="6">
+
+        <elementid>6</elementid>
+
+        <elementname>碳</elementname>
+
+        <symbol>C</symbol>
+
+        <atomicnumber>6</atomicnumber>
+
+        <position>第二周期第ⅣA族</position>
+
+        <atomicmass>12.01</atomicmass>
+
+        <englishname>carbon</englishname>
+
+        <pinyin>tàn</pinyin>
+
+        <types>非金属</types>
+
+        <configuration><![CDATA[1s<sup>2</sup>2s<sup>2</sup>2p<sup>2</sup>]]></configuration>
+
+    </element>
+
+    <element id="7">
+
+        <elementid>7</elementid>
+
+        <elementname>氮</elementname>
+
+        <symbol>N</symbol>
+
+        <atomicnumber>7</atomicnumber>
+
+        <position>第二周期第ⅤA族</position>
+
+        <atomicmass>14.01</atomicmass>
+
+        <englishname>nitrogen</englishname>
+
+        <pinyin>dàn</pinyin>
+
+        <types>非金属</types>
+
+        <configuration><![CDATA[1s<sup>2</sup>2s<sup>2</sup>2p<sup>3</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="8">
+
+        <elementid>8</elementid>
+
+        <elementname>氧</elementname>
+
+        <symbol>O</symbol>
+
+        <atomicnumber>8</atomicnumber>
+
+        <position>第二周期第ⅥA族</position>
+
+        <atomicmass>16.00</atomicmass>
+
+        <englishname>oxygen</englishname>
+
+        <pinyin>yǎng</pinyin>
+
+        <types>非金属</types>
+
+        <configuration><![CDATA[1s<sup>2</sup>2s<sup>2</sup>2p<sup>4</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="9">
+
+        <elementid>9</elementid>
+
+        <elementname>氟</elementname>
+
+        <symbol>F</symbol>
+
+        <atomicnumber>9</atomicnumber>
+
+        <position>第二周期第ⅦA族</position>
+
+        <atomicmass>19.00</atomicmass>
+
+        <englishname>fluorine</englishname>
+
+        <pinyin>fú</pinyin>
+
+        <types>卤素</types>
+
+        <configuration><![CDATA[1s<sup>2</sup>2s<sup>2</sup>2p<sup>5</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="10">
+
+        <elementid>10</elementid>
+
+        <elementname>氖</elementname>
+
+        <symbol>Ne</symbol>
+
+        <atomicnumber>10</atomicnumber>
+
+        <position>第二周期第0族</position>
+
+        <atomicmass>20.18  </atomicmass>
+
+        <englishname>neon</englishname>
+
+        <pinyin>nǎi</pinyin>
+
+        <types>惰性气体</types>
+
+        <configuration><![CDATA[1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="11">
+
+        <elementid>11</elementid>
+
+        <elementname>钠</elementname>
+
+        <symbol>Na</symbol>
+
+        <atomicnumber>11</atomicnumber>
+
+        <position>第三周期第ⅠA族</position>
+
+        <atomicmass>22.99</atomicmass>
+
+        <englishname>sodium</englishname>
+
+        <pinyin>nà</pinyin>
+
+        <types>碱金属</types>
+
+        <configuration><![CDATA[3s<sup>1</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="12">
+
+        <elementid>12</elementid>
+
+        <elementname>镁</elementname>
+
+        <symbol>Mg</symbol>
+
+        <atomicnumber>12</atomicnumber>
+
+        <position>第三周期第ⅡA族</position>
+
+        <atomicmass>24.31</atomicmass>
+
+        <englishname>magnesium</englishname>
+
+        <pinyin>měi</pinyin>
+
+        <types>碱土金属</types>
+
+        <configuration><![CDATA[3s<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="13">
+
+        <elementid>13</elementid>
+
+        <elementname>铝</elementname>
+
+        <symbol>Al</symbol>
+
+        <atomicnumber>13</atomicnumber>
+
+        <position>第三周期第ⅢA族</position>
+
+        <atomicmass>26.98</atomicmass>
+
+        <englishname>aluminium</englishname>
+
+        <pinyin>lǚ</pinyin>
+
+        <types>主族金属</types>
+
+        <configuration><![CDATA[3s<sup>2</sup>3p<sup>1</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="14">
+
+        <elementid>14</elementid>
+
+        <elementname>硅</elementname>
+
+        <symbol>Si</symbol>
+
+        <atomicnumber>14</atomicnumber>
+
+        <position>第三周期第ⅣA族</position>
+
+        <atomicmass>28.09</atomicmass>
+
+        <englishname>silicon</englishname>
+
+        <pinyin>guī</pinyin>
+
+        <types>类金属</types>
+
+        <configuration><![CDATA[3s<sup>2</sup>3p<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="15">
+
+        <elementid>15</elementid>
+
+        <elementname>磷</elementname>
+
+        <symbol>P</symbol>
+
+        <atomicnumber>15</atomicnumber>
+
+        <position>第三周期第ⅤA族</position>
+
+        <atomicmass>30.97</atomicmass>
+
+        <englishname>phosphorus</englishname>
+
+        <pinyin>lín</pinyin>
+
+        <types>非金属</types>
+
+        <configuration><![CDATA[3s<sup>2</sup>3p<sup>3</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="16">
+
+        <elementid>16</elementid>
+
+        <elementname>硫</elementname>
+
+        <symbol>S</symbol>
+
+        <atomicnumber>16</atomicnumber>
+
+        <position>第三周期第ⅥA族</position>
+
+        <atomicmass>32.06</atomicmass>
+
+        <englishname>sulfur</englishname>
+
+        <pinyin>liú</pinyin>
+
+        <types>非金属</types>
+
+        <configuration><![CDATA[3s<sup>2</sup>3p<sup>4</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="17">
+
+        <elementid>17</elementid>
+
+        <elementname>氯</elementname>
+
+        <symbol>Cl</symbol>
+
+        <atomicnumber>17</atomicnumber>
+
+        <position>第三周期第ⅦA族</position>
+
+        <atomicmass>35.45</atomicmass>
+
+        <englishname>chlorine</englishname>
+
+        <pinyin>lǜ</pinyin>
+
+        <types>卤素</types>
+
+        <configuration><![CDATA[3s<sup>2</sup>3p<sup>5</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="18">
+
+        <elementid>18</elementid>
+
+        <elementname>氩</elementname>
+
+        <symbol>Ar</symbol>
+
+        <atomicnumber>18</atomicnumber>
+
+        <position>第三周期第0族</position>
+
+        <atomicmass>39.95</atomicmass>
+
+        <englishname>argon</englishname>
+
+        <pinyin>yà</pinyin>
+
+        <types>惰性气体</types>
+
+        <configuration><![CDATA[3s<sup>2</sup>3p<sup>6</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="19">
+
+        <elementid>19</elementid>
+
+        <elementname>钾</elementname>
+
+        <symbol>K</symbol>
+
+        <atomicnumber>19</atomicnumber>
+
+        <position>第四周期第ⅠA族</position>
+
+        <atomicmass>39.10</atomicmass>
+
+        <englishname>potassium</englishname>
+
+        <pinyin>jiǎ</pinyin>
+
+        <types>碱金属</types>
+
+        <configuration><![CDATA[4s<sup>1</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="20">
+
+        <elementid>20</elementid>
+
+        <elementname>钙</elementname>
+
+        <symbol>Ca</symbol>
+
+        <atomicnumber>20</atomicnumber>
+
+        <position>第四周期第ⅡA族</position>
+
+        <atomicmass>40.08</atomicmass>
+
+        <englishname>calcium</englishname>
+
+        <pinyin>gài</pinyin>
+
+        <types>碱土金属</types>
+
+        <configuration><![CDATA[4s<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="21">
+
+        <elementid>21</elementid>
+
+        <elementname>钪</elementname>
+
+        <symbol>Sc</symbol>
+
+        <atomicnumber>21</atomicnumber>
+
+        <position>第四周期第ⅢB族</position>
+
+        <atomicmass>44.96</atomicmass>
+
+        <englishname>scandium</englishname>
+
+        <pinyin>kàng</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[ 3d<sup>1</sup>4s<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="22">
+
+        <elementid>22</elementid>
+
+        <elementname>钛</elementname>
+
+        <symbol>Ti</symbol>
+
+        <atomicnumber>22</atomicnumber>
+
+        <position>第四周期第ⅣB族</position>
+
+        <atomicmass>47.87</atomicmass>
+
+        <englishname>titanium</englishname>
+
+        <pinyin>tài</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[3d<sup>2</sup>4s<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="23">
+
+        <elementid>23</elementid>
+
+        <elementname>钒</elementname>
+
+        <symbol>V</symbol>
+
+        <atomicnumber>23</atomicnumber>
+
+        <position>第四周期第ⅤB族</position>
+
+        <atomicmass>50.94</atomicmass>
+
+        <englishname>vanadium</englishname>
+
+        <pinyin>fán</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[3d<sup>3</sup>4s<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="24">
+
+        <elementid>24</elementid>
+
+        <elementname>铬</elementname>
+
+        <symbol>Cr</symbol>
+
+        <atomicnumber>24</atomicnumber>
+
+        <position>第四周期第ⅥB族</position>
+
+        <atomicmass>52.00</atomicmass>
+
+        <englishname>chromium</englishname>
+
+        <pinyin>gè</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[3d<sup>5</sup>4s<sup>1</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="25">
+
+        <elementid>25</elementid>
+
+        <elementname>锰</elementname>
+
+        <symbol>Mn</symbol>
+
+        <atomicnumber>25</atomicnumber>
+
+        <position>第四周期第ⅦB族</position>
+
+        <atomicmass>54.94</atomicmass>
+
+        <englishname>manganese</englishname>
+
+        <pinyin>měng</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[4s<sup>2</sup>3d<sup>5</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="26">
+
+        <elementid>26</elementid>
+
+        <elementname>铁</elementname>
+
+        <symbol>Fe</symbol>
+
+        <atomicnumber>26</atomicnumber>
+
+        <position>第四周期第Ⅷ族</position>
+
+        <atomicmass>55.85</atomicmass>
+
+        <englishname>iron</englishname>
+
+        <pinyin>tiě</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[3d<sup>6</sup>4s<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="27">
+
+        <elementid>27</elementid>
+
+        <elementname>钴</elementname>
+
+        <symbol>Co</symbol>
+
+        <atomicnumber>27</atomicnumber>
+
+        <position>第四周期第Ⅷ族</position>
+
+        <atomicmass>58.93</atomicmass>
+
+        <englishname>cobalt</englishname>
+
+        <pinyin>gǔ</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[4s<sup>2</sup>3d<sup>7</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="28">
+
+        <elementid>28</elementid>
+
+        <elementname>镍</elementname>
+
+        <symbol>Ni</symbol>
+
+        <atomicnumber>28</atomicnumber>
+
+        <position>第四周期第Ⅷ族</position>
+
+        <atomicmass>58.69</atomicmass>
+
+        <englishname>nickel</englishname>
+
+        <pinyin>niè</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[3d<sup>8</sup>4s<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="29">
+
+        <elementid>29</elementid>
+
+        <elementname>铜</elementname>
+
+        <symbol>Cu</symbol>
+
+        <atomicnumber>29</atomicnumber>
+
+        <position>第四周期第ⅠB族</position>
+
+        <atomicmass>63.55</atomicmass>
+
+        <englishname>copper</englishname>
+
+        <pinyin>tóng</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[3d<sup>10</sup>4s<sup>1</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="30">
+
+        <elementid>30</elementid>
+
+        <elementname>锌</elementname>
+
+        <symbol>Zn</symbol>
+
+        <atomicnumber>30</atomicnumber>
+
+        <position>第四周期第ⅡB族</position>
+
+        <atomicmass>65.41</atomicmass>
+
+        <englishname>zinc</englishname>
+
+        <pinyin>xīn</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[3d<sup>10</sup>4s<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="31">
+
+        <elementid>31</elementid>
+
+        <elementname>镓</elementname>
+
+        <symbol>Ga</symbol>
+
+        <atomicnumber>31</atomicnumber>
+
+        <position>第四周期第ⅢA族</position>
+
+        <atomicmass>69.72</atomicmass>
+
+        <englishname>gallium</englishname>
+
+        <pinyin>jiā</pinyin>
+
+        <types>主族金属</types>
+
+        <configuration><![CDATA[3d<sup>10</sup>4s<sup>2</sup>4p<sup>1</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="32">
+
+        <elementid>32</elementid>
+
+        <elementname>锗</elementname>
+
+        <symbol>Ge</symbol>
+
+        <atomicnumber>32</atomicnumber>
+
+        <position>第四周期第ⅣA族</position>
+
+        <atomicmass>72.64</atomicmass>
+
+        <englishname>germanium</englishname>
+
+        <pinyin>zhě</pinyin>
+
+        <types>类金属</types>
+
+        <configuration><![CDATA[3d<sup>10</sup>4s<sup>2</sup>4p<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="33">
+
+        <elementid>33</elementid>
+
+        <elementname>砷</elementname>
+
+        <symbol>As</symbol>
+
+        <atomicnumber>33</atomicnumber>
+
+        <position>第四周期第ⅤA族</position>
+
+        <atomicmass>74.92</atomicmass>
+
+        <englishname>arsenic</englishname>
+
+        <pinyin>shēn</pinyin>
+
+        <types>类金属</types>
+
+        <configuration><![CDATA[4s<sup>2</sup>3d<sup>10</sup>4p<sup>3</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="34">
+
+        <elementid>34</elementid>
+
+        <elementname>硒</elementname>
+
+        <symbol>Se</symbol>
+
+        <atomicnumber>34</atomicnumber>
+
+        <position>第四周期第ⅥA族</position>
+
+        <atomicmass>78.96</atomicmass>
+
+        <englishname>selenium</englishname>
+
+        <pinyin>xī</pinyin>
+
+        <types>非金属</types>
+
+        <configuration><![CDATA[4s<sup>2</sup>3d<sup>10</sup>4p<sup>4</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="35">
+
+        <elementid>35</elementid>
+
+        <elementname>溴</elementname>
+
+        <symbol>Br</symbol>
+
+        <atomicnumber>35</atomicnumber>
+
+        <position>第四周期第ⅦA族</position>
+
+        <atomicmass>79.90</atomicmass>
+
+        <englishname>bromine</englishname>
+
+        <pinyin>xiù</pinyin>
+
+        <types>卤素</types>
+
+        <configuration><![CDATA[4s<sup>2</sup>3d<sup>10</sup>4p<sup>5</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="36">
+
+        <elementid>36</elementid>
+
+        <elementname>氪</elementname>
+
+        <symbol>Kr</symbol>
+
+        <atomicnumber>36</atomicnumber>
+
+        <position>第四周期第0族</position>
+
+        <atomicmass>83.80</atomicmass>
+
+        <englishname>krypton</englishname>
+
+        <pinyin>kè</pinyin>
+
+        <types>惰性气体</types>
+
+        <configuration><![CDATA[3d<sup>10</sup>4s<sup>2</sup>4p<sup>6</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="37">
+
+        <elementid>37</elementid>
+
+        <elementname>铷</elementname>
+
+        <symbol>Rb</symbol>
+
+        <atomicnumber>37</atomicnumber>
+
+        <position>第五周期第ⅠA族</position>
+
+        <atomicmass>85.47</atomicmass>
+
+        <englishname>rubidium</englishname>
+
+        <pinyin>rú</pinyin>
+
+        <types>碱金属</types>
+
+        <configuration><![CDATA[5s<sup>1</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="38">
+
+        <elementid>38</elementid>
+
+        <elementname>锶</elementname>
+
+        <symbol>Sr</symbol>
+
+        <atomicnumber>38</atomicnumber>
+
+        <position>第五周期第ⅡA族</position>
+
+        <atomicmass>87.62</atomicmass>
+
+        <englishname>strontium</englishname>
+
+        <pinyin>sī</pinyin>
+
+        <types>碱土金属</types>
+
+        <configuration><![CDATA[5s<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="39">
+
+        <elementid>39</elementid>
+
+        <elementname>钇</elementname>
+
+        <symbol>Y</symbol>
+
+        <atomicnumber>39</atomicnumber>
+
+        <position>第五周期第ⅢB族</position>
+
+        <atomicmass>88.91</atomicmass>
+
+        <englishname>yttrium</englishname>
+
+        <pinyin>yǐ</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[4d<sup>1</sup>5s<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="40">
+
+        <elementid>40</elementid>
+
+        <elementname>锆</elementname>
+
+        <symbol>Zr</symbol>
+
+        <atomicnumber>40</atomicnumber>
+
+        <position>第五周期第ⅣB族</position>
+
+        <atomicmass>91.22</atomicmass>
+
+        <englishname>zirconium</englishname>
+
+        <pinyin>gào</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[5s<sup>2</sup>4d<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="41">
+
+        <elementid>41</elementid>
+
+        <elementname>铌</elementname>
+
+        <symbol>Nb</symbol>
+
+        <atomicnumber>41</atomicnumber>
+
+        <position>第一周期第ⅠA</position>
+
+        <atomicmass>92.91</atomicmass>
+
+        <englishname>niobium</englishname>
+
+        <pinyin>ní</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[4d<sup>4</sup>5s<sup>1</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="42">
+
+        <elementid>42</elementid>
+
+        <elementname>钼</elementname>
+
+        <symbol>Mo</symbol>
+
+        <atomicnumber>42</atomicnumber>
+
+        <position>第五周期第ⅥB族</position>
+
+        <atomicmass>95.94</atomicmass>
+
+        <englishname>molybdenum</englishname>
+
+        <pinyin>mù</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[5s<sup>1</sup>4d<sup>5</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="43">
+
+        <elementid>43</elementid>
+
+        <elementname>锝</elementname>
+
+        <symbol>Tc</symbol>
+
+        <atomicnumber>43</atomicnumber>
+
+        <position>第五周期第ⅦB族</position>
+
+        <atomicmass>（98）</atomicmass>
+
+        <englishname>technetium</englishname>
+
+        <pinyin>dé</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[4d<sup>5</sup>5s<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="44">
+
+        <elementid>44</elementid>
+
+        <elementname>钌</elementname>
+
+        <symbol>Ru</symbol>
+
+        <atomicnumber>44</atomicnumber>
+
+        <position>第五周期第Ⅷ族</position>
+
+        <atomicmass>101.1</atomicmass>
+
+        <englishname>ruthenium</englishname>
+
+        <pinyin>liǎo</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[4d<sup>7</sup>5s<sup>1</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="45">
+
+        <elementid>45</elementid>
+
+        <elementname>铑</elementname>
+
+        <symbol>Rh</symbol>
+
+        <atomicnumber>45</atomicnumber>
+
+        <position>第五周期第Ⅷ族</position>
+
+        <atomicmass>102.9</atomicmass>
+
+        <englishname>rhodium</englishname>
+
+        <pinyin>lǎo</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[4d<sup>8</sup>5s<sup>1</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="46">
+
+        <elementid>46</elementid>
+
+        <elementname>钯</elementname>
+
+        <symbol>Pd</symbol>
+
+        <atomicnumber>46</atomicnumber>
+
+        <position>第五周期第Ⅷ族</position>
+
+        <atomicmass>106.4  </atomicmass>
+
+        <englishname>palladium</englishname>
+
+        <pinyin>bǎ</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[4d<sup>10</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="47">
+
+        <elementid>47</elementid>
+
+        <elementname>银</elementname>
+
+        <symbol>Ag</symbol>
+
+        <atomicnumber>47</atomicnumber>
+
+        <position>第五周期第ⅠB族</position>
+
+        <atomicmass>107.9  </atomicmass>
+
+        <englishname>silver</englishname>
+
+        <pinyin>yín</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[4d<sup>10</sup>5s<sup>1</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="48">
+
+        <elementid>48</elementid>
+
+        <elementname>镉</elementname>
+
+        <symbol>Cd</symbol>
+
+        <atomicnumber>48</atomicnumber>
+
+        <position>第五周期第ⅡB族</position>
+
+        <atomicmass>112.4  </atomicmass>
+
+        <englishname>cadmium</englishname>
+
+        <pinyin>gé</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[5s<sup>2</sup>4d<sup>10</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="49">
+
+        <elementid>49</elementid>
+
+        <elementname>铟</elementname>
+
+        <symbol>In</symbol>
+
+        <atomicnumber>49</atomicnumber>
+
+        <position>第五周期第ⅢA族</position>
+
+        <atomicmass>114.8  </atomicmass>
+
+        <englishname>indium</englishname>
+
+        <pinyin>yīn</pinyin>
+
+        <types>主族金属</types>
+
+        <configuration><![CDATA[4d<sup>10</sup>5s<sup>2</sup>5p<sup>1</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="50">
+
+        <elementid>50</elementid>
+
+        <elementname>锡</elementname>
+
+        <symbol>Sn</symbol>
+
+        <atomicnumber>50</atomicnumber>
+
+        <position>第五周期第ⅣA族</position>
+
+        <atomicmass>118.7  </atomicmass>
+
+        <englishname>tin</englishname>
+
+        <pinyin>xī</pinyin>
+
+        <types>主族金属</types>
+
+        <configuration><![CDATA[4d<sup>10</sup>5s<sup>2</sup>5p<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="51">
+
+        <elementid>51</elementid>
+
+        <elementname>锑</elementname>
+
+        <symbol>Sb</symbol>
+
+        <atomicnumber>51</atomicnumber>
+
+        <position>第五周期第ⅤA族</position>
+
+        <atomicmass>121.8  </atomicmass>
+
+        <englishname>stibonium</englishname>
+
+        <pinyin>tī</pinyin>
+
+        <types>类金属</types>
+
+        <configuration><![CDATA[4d<sup>10</sup>5s<sup>2</sup>5p<sup>3</sup>]]></configuration>
+
+    </element>
+
+    <element id="52">
+
+        <elementid>52</elementid>
+
+        <elementname>碲</elementname>
+
+        <symbol>Te</symbol>
+
+        <atomicnumber>52</atomicnumber>
+
+        <position>第五周期第ⅥA族</position>
+
+        <atomicmass>127.6  </atomicmass>
+
+        <englishname>tellurium</englishname>
+
+        <pinyin>dì</pinyin>
+
+        <types>类金属</types>
+
+        <configuration><![CDATA[4d<sup>10</sup>5s<sup>2</sup>5p<sup>4</sup>]]></configuration>
+
+    </element>
+
+    <element id="53">
+
+        <elementid>53</elementid>
+
+        <elementname>碘</elementname>
+
+        <symbol>I</symbol>
+
+        <atomicnumber>53</atomicnumber>
+
+        <position>第五周期第ⅦA族</position>
+
+        <atomicmass>126.9  </atomicmass>
+
+        <englishname>iodine</englishname>
+
+        <pinyin>diǎn</pinyin>
+
+        <types>卤素</types>
+
+        <configuration><![CDATA[4d<sup>10</sup>5s<sup>2</sup>5p<sup>5</sup>]]></configuration>
+
+    </element>
+
+    <element id="54">
+
+        <elementid>54</elementid>
+
+        <elementname>氙</elementname>
+
+        <symbol>Xe</symbol>
+
+        <atomicnumber>54</atomicnumber>
+
+        <position>第五周期第0族</position>
+
+        <atomicmass>131.3  </atomicmass>
+
+        <englishname>xenon</englishname>
+
+        <pinyin>xiān</pinyin>
+
+        <types>惰性气体</types>
+
+        <configuration><![CDATA[5s<sup>2</sup>4d<sup>10</sup>5p<sup>6</sup>]]></configuration>
+
+    </element>
+
+    <element id="55">
+
+        <elementid>55</elementid>
+
+        <elementname>铯</elementname>
+
+        <symbol>Cs</symbol>
+
+        <atomicnumber>55</atomicnumber>
+
+        <position>第六周期第ⅠA族</position>
+
+        <atomicmass>132.9  </atomicmass>
+
+        <englishname>cesium</englishname>
+
+        <pinyin>sè</pinyin>
+
+        <types>碱金属</types>
+
+        <configuration><![CDATA[6s<sup>1</sup>]]></configuration>
+
+    </element>
+
+    <element id="56">
+
+        <elementid>56</elementid>
+
+        <elementname>钡</elementname>
+
+        <symbol>Ba</symbol>
+
+        <atomicnumber>56</atomicnumber>
+
+        <position>第六周期第ⅡA族</position>
+
+        <atomicmass>137.3  </atomicmass>
+
+        <englishname>barium</englishname>
+
+        <pinyin>bèi</pinyin>
+
+        <types>碱土金属</types>
+
+        <configuration><![CDATA[6s<sup>2</sup>]]></configuration>
+
+    </element>
+
+    <element id="57">
+
+        <elementid>57</elementid>
+
+        <elementname>镧</elementname>
+
+        <symbol>La</symbol>
+
+        <atomicnumber>57</atomicnumber>
+
+        <position>第六周期第ⅢB族</position>
+
+        <atomicmass>138.9  </atomicmass>
+
+        <englishname>lanthanum</englishname>
+
+        <pinyin>lán</pinyin>
+
+        <types>镧系金属</types>
+
+        <configuration><![CDATA[5d<sup>1</sup>6s<sup>2</sup>]]></configuration>
+
+    </element>
+
+    <element id="58">
+
+        <elementid>58</elementid>
+
+        <elementname>铈</elementname>
+
+        <symbol>Ce</symbol>
+
+        <atomicnumber>58</atomicnumber>
+
+        <position>第六周期第ⅢB族</position>
+
+        <atomicmass>140.1  </atomicmass>
+
+        <englishname>cerium</englishname>
+
+        <pinyin>shì</pinyin>
+
+        <types>镧系金属</types>
+
+        <configuration><![CDATA[4f<sup>2</sup>6s<sup>2</sup>]]></configuration>
+
+    </element>
+
+    <element id="59">
+
+        <elementid>59</elementid>
+
+        <elementname>镨</elementname>
+
+        <symbol>Pr</symbol>
+
+        <atomicnumber>59</atomicnumber>
+
+        <position>第六周期第ⅢB族</position>
+
+        <atomicmass>140.9  </atomicmass>
+
+        <englishname>praseodymium</englishname>
+
+        <pinyin>pǔ</pinyin>
+
+        <types>镧系金属</types>
+
+        <configuration><![CDATA[4f<sup>3</sup>6s<sup>2</sup>]]></configuration>
+
+    </element>
+
+    <element id="60">
+
+        <elementid>60</elementid>
+
+        <elementname>钕</elementname>
+
+        <symbol>Nd</symbol>
+
+        <atomicnumber>60</atomicnumber>
+
+        <position>第六周期第ⅢB族</position>
+
+        <atomicmass>144.2  </atomicmass>
+
+        <englishname>neodymium</englishname>
+
+        <pinyin>nǚ</pinyin>
+
+        <types>镧系金属</types>
+
+        <configuration><![CDATA[4f<sup>4</sup>6s<sup>2</sup>]]></configuration>
+
+    </element>
+
+    <element id="61">
+
+        <elementid>61</elementid>
+
+        <elementname>钷</elementname>
+
+        <symbol>Pm</symbol>
+
+        <atomicnumber>61</atomicnumber>
+
+        <position>第六周期第ⅢB族</position>
+
+        <atomicmass>（145）  </atomicmass>
+
+        <englishname>promethium</englishname>
+
+        <pinyin>pǒ</pinyin>
+
+        <types>镧系金属</types>
+
+        <configuration><![CDATA[4f<sup>5</sup>6s<sup>2</sup>]]></configuration>
+
+    </element>
+
+    <element id="62">
+
+        <elementid>62</elementid>
+
+        <elementname>钐</elementname>
+
+        <symbol>Sm</symbol>
+
+        <atomicnumber>62</atomicnumber>
+
+        <position>第六周期第ⅢB族</position>
+
+        <atomicmass>150.4  </atomicmass>
+
+        <englishname>samarium</englishname>
+
+        <pinyin>shān</pinyin>
+
+        <types>镧系金属</types>
+
+        <configuration><![CDATA[6s<sup>2</sup>4f<sup>6</sup>]]></configuration>
+
+    </element>
+
+    <element id="63">
+
+        <elementid>63</elementid>
+
+        <elementname>铕</elementname>
+
+        <symbol>Eu</symbol>
+
+        <atomicnumber>63</atomicnumber>
+
+        <position>第六周期第ⅢB族</position>
+
+        <atomicmass>152.0  </atomicmass>
+
+        <englishname>europium</englishname>
+
+        <pinyin>yǒu</pinyin>
+
+        <types>镧系金属</types>
+
+        <configuration><![CDATA[4f<sup>7</sup>6s<sup>2</sup>]]></configuration>
+
+    </element>
+
+    <element id="64">
+
+        <elementid>64</elementid>
+
+        <elementname>钆</elementname>
+
+        <symbol>Gd</symbol>
+
+        <atomicnumber>64</atomicnumber>
+
+        <position>第六周期第ⅢB族</position>
+
+        <atomicmass>157.3  </atomicmass>
+
+        <englishname>gadolinium</englishname>
+
+        <pinyin>gá</pinyin>
+
+        <types>镧系金属</types>
+
+        <configuration><![CDATA[4f<sup>7</sup>5d<sup>1</sup>6s<sup>2</sup>]]></configuration>
+
+    </element>
+
+    <element id="65">
+
+        <elementid>65</elementid>
+
+        <elementname>铽</elementname>
+
+        <symbol>Tb</symbol>
+
+        <atomicnumber>65</atomicnumber>
+
+        <position>第六周期第ⅢB族</position>
+
+        <atomicmass>158.9  </atomicmass>
+
+        <englishname>terbium</englishname>
+
+        <pinyin>tè</pinyin>
+
+        <types>镧系金属</types>
+
+        <configuration><![CDATA[4f<sup>9</sup>6s<sup>2</sup>]]></configuration>
+
+    </element>
+
+    <element id="66">
+
+        <elementid>66</elementid>
+
+        <elementname>镝</elementname>
+
+        <symbol>Dy</symbol>
+
+        <atomicnumber>66</atomicnumber>
+
+        <position>第六周期第ⅢB族</position>
+
+        <atomicmass>162.5  </atomicmass>
+
+        <englishname>dysprosium</englishname>
+
+        <pinyin>dí</pinyin>
+
+        <types>镧系金属</types>
+
+        <configuration><![CDATA[4f<sup>10</sup>6s<sup>2</sup>]]></configuration>
+
+    </element>
+
+    <element id="67">
+
+        <elementid>67</elementid>
+
+        <elementname>钬</elementname>
+
+        <symbol>Ho</symbol>
+
+        <atomicnumber>67</atomicnumber>
+
+        <position>第六周期第ⅢB族</position>
+
+        <atomicmass>164.9  </atomicmass>
+
+        <englishname>holmium</englishname>
+
+        <pinyin>huǒ</pinyin>
+
+        <types>镧系金属</types>
+
+        <configuration><![CDATA[4f<sup>11</sup>6s<sup>2</sup>]]></configuration>
+
+    </element>
+
+    <element id="68">
+
+        <elementid>68</elementid>
+
+        <elementname>铒</elementname>
+
+        <symbol>Er</symbol>
+
+        <atomicnumber>68</atomicnumber>
+
+        <position>第六周期第ⅢB族</position>
+
+        <atomicmass>167.3  </atomicmass>
+
+        <englishname>erbium</englishname>
+
+        <pinyin>ěr</pinyin>
+
+        <types>镧系金属</types>
+
+        <configuration><![CDATA[4f<sup>12</sup>6s<sup>2</sup>]]></configuration>
+
+    </element>
+
+    <element id="69">
+
+        <elementid>69</elementid>
+
+        <elementname>铥</elementname>
+
+        <symbol>Tm</symbol>
+
+        <atomicnumber>69</atomicnumber>
+
+        <position>第六周期第ⅢB族</position>
+
+        <atomicmass>168.9  </atomicmass>
+
+        <englishname>thulium</englishname>
+
+        <pinyin>diū</pinyin>
+
+        <types>镧系金属</types>
+
+        <configuration><![CDATA[4f<sup>13</sup>6s<sup>2</sup>]]></configuration>
+
+    </element>
+
+    <element id="70">
+
+        <elementid>70</elementid>
+
+        <elementname>镱</elementname>
+
+        <symbol>Yb</symbol>
+
+        <atomicnumber>70</atomicnumber>
+
+        <position>第六周期第ⅢB族</position>
+
+        <atomicmass>173.0  </atomicmass>
+
+        <englishname>ytterbium</englishname>
+
+        <pinyin>yì</pinyin>
+
+        <types>镧系金属</types>
+
+        <configuration><![CDATA[4f<sup>14</sup>6s<sup>2</sup>]]></configuration>
+
+    </element>
+
+    <element id="71">
+
+        <elementid>71</elementid>
+
+        <elementname>镥</elementname>
+
+        <symbol>Lu</symbol>
+
+        <atomicnumber>71</atomicnumber>
+
+        <position>第六周期第ⅢB族</position>
+
+        <atomicmass>175.0  </atomicmass>
+
+        <englishname>lutecium</englishname>
+
+        <pinyin>lǔ</pinyin>
+
+        <types>镧系金属</types>
+
+        <configuration><![CDATA[6s<sup>2</sup>4f<sup>14</sup>5d<sup>1</sup>]]></configuration>
+
+    </element>
+
+    <element id="72">
+
+        <elementid>72</elementid>
+
+        <elementname>铪</elementname>
+
+        <symbol>Hf</symbol>
+
+        <atomicnumber>72</atomicnumber>
+
+        <position>第六周期第ⅣB族</position>
+
+        <atomicmass>178.5  </atomicmass>
+
+        <englishname>hafnium</englishname>
+
+        <pinyin>hā</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[4f<sup>14</sup>5d<sup>2</sup>6s<sup>2</sup>]]></configuration>
+
+    </element>
+
+    <element id="73">
+
+        <elementid>73</elementid>
+
+        <elementname>钽</elementname>
+
+        <symbol>Ta</symbol>
+
+        <atomicnumber>73</atomicnumber>
+
+        <position>第六周期第ⅤB族</position>
+
+        <atomicmass>178.5  </atomicmass>
+
+        <englishname>tantalum</englishname>
+
+        <pinyin>tǎn</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[4f<sup>14</sup>5d<sup>3</sup>6s<sup>2</sup>]]></configuration>
+
+    </element>
+
+    <element id="74">
+
+        <elementid>74</elementid>
+
+        <elementname>钨</elementname>
+
+        <symbol>W</symbol>
+
+        <atomicnumber>74</atomicnumber>
+
+        <position>第六周期第ⅥB族</position>
+
+        <atomicmass>183.8  </atomicmass>
+
+        <englishname>tungsten</englishname>
+
+        <pinyin>wū</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[4f<sup>14</sup>5d<sup>4</sup>6s<sup>2</sup>]]></configuration>
+
+    </element>
+
+    <element id="75">
+
+        <elementid>75</elementid>
+
+        <elementname>铼</elementname>
+
+        <symbol>Re</symbol>
+
+        <atomicnumber>75</atomicnumber>
+
+        <position>第六周期第ⅦB族</position>
+
+        <atomicmass>186.2  </atomicmass>
+
+        <englishname>rhenium</englishname>
+
+        <pinyin>lái</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[4f<sup>14</sup>5d<sup>5</sup>6s<sup>2</sup>]]></configuration>
+
+    </element>
+
+    <element id="76">
+
+        <elementid>76</elementid>
+
+        <elementname>锇</elementname>
+
+        <symbol>Os</symbol>
+
+        <atomicnumber>76</atomicnumber>
+
+        <position>第六周期第Ⅷ族</position>
+
+        <atomicmass>190.2  </atomicmass>
+
+        <englishname>osmium</englishname>
+
+        <pinyin>é</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[4f<sup>14</sup>5d<sup>6</sup>6s<sup>2</sup>]]></configuration>
+
+    </element>
+
+    <element id="77">
+
+        <elementid>77</elementid>
+
+        <elementname>铱</elementname>
+
+        <symbol>Ir</symbol>
+
+        <atomicnumber>77</atomicnumber>
+
+        <position>第六周期第Ⅷ族</position>
+
+        <atomicmass>192.2  </atomicmass>
+
+        <englishname>iridium</englishname>
+
+        <pinyin>yī</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[4f<sup>14</sup>5d<sup>7</sup>6s<sup>2</sup>]]></configuration>
+
+    </element>
+
+    <element id="78">
+
+        <elementid>78</elementid>
+
+        <elementname>铂</elementname>
+
+        <symbol>Pt</symbol>
+
+        <atomicnumber>78</atomicnumber>
+
+        <position>第六周期第Ⅷ族</position>
+
+        <atomicmass>195.1  </atomicmass>
+
+        <englishname>platinum</englishname>
+
+        <pinyin>bó</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[4f<sup>14</sup>5d<sup>9</sup>6s<sup>1</sup>]]></configuration>
+
+    </element>
+
+    <element id="79">
+
+        <elementid>79</elementid>
+
+        <elementname>金</elementname>
+
+        <symbol>Au</symbol>
+
+        <atomicnumber>79</atomicnumber>
+
+        <position>第六周期第ⅠB族</position>
+
+        <atomicmass>197.0  </atomicmass>
+
+        <englishname>gold</englishname>
+
+        <pinyin>jīn</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[4f<sup>14</sup>5d<sup>10</sup>6s<sup>1</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="80">
+
+        <elementid>80</elementid>
+
+        <elementname>汞</elementname>
+
+        <symbol>Hg</symbol>
+
+        <atomicnumber>80</atomicnumber>
+
+        <position>第六周期第ⅡB族</position>
+
+        <atomicmass>200.6  </atomicmass>
+
+        <englishname>mercury</englishname>
+
+        <pinyin>gǒng</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[4f<sup>14</sup>5d<sup>10</sup>6s<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="81">
+
+        <elementid>81</elementid>
+
+        <elementname>铊</elementname>
+
+        <symbol>Tl</symbol>
+
+        <atomicnumber>81</atomicnumber>
+
+        <position>第六周期第ⅢA族</position>
+
+        <atomicmass>204.4  </atomicmass>
+
+        <englishname>thallium</englishname>
+
+        <pinyin>tā</pinyin>
+
+        <types>主族金属</types>
+
+        <configuration><![CDATA[4f<sup>14</sup>5d<sup>10</sup>6s<sup>2</sup>6p<sup>1</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="82">
+
+        <elementid>82</elementid>
+
+        <elementname>铅</elementname>
+
+        <symbol>Pb</symbol>
+
+        <atomicnumber>82</atomicnumber>
+
+        <position>第六周期第ⅣA族</position>
+
+        <atomicmass>207.2  </atomicmass>
+
+        <englishname>lead</englishname>
+
+        <pinyin>qiān</pinyin>
+
+        <types>主族金属</types>
+
+        <configuration><![CDATA[4f<sup>14</sup>5d<sup>10</sup>6s<sup>2</sup>6p<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="83">
+
+        <elementid>83</elementid>
+
+        <elementname>铋</elementname>
+
+        <symbol>Bi</symbol>
+
+        <atomicnumber>83</atomicnumber>
+
+        <position>第六周期第ⅤA族</position>
+
+        <atomicmass>209.0  </atomicmass>
+
+        <englishname>bismuth</englishname>
+
+        <pinyin>bì</pinyin>
+
+        <types>主族金属</types>
+
+        <configuration><![CDATA[4f<sup>14</sup>5d<sup>10</sup>6s<sup>2</sup>6p<sup>3</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="84">
+
+        <elementid>84</elementid>
+
+        <elementname>钋</elementname>
+
+        <symbol>Po</symbol>
+
+        <atomicnumber>84</atomicnumber>
+
+        <position>第一周期第ⅠA</position>
+
+        <atomicmass>209  </atomicmass>
+
+        <englishname>polonium</englishname>
+
+        <pinyin>pō</pinyin>
+
+        <types>类金属</types>
+
+        <configuration><![CDATA[6s<sup>2</sup>4f<sup>14</sup>5d<sup>10</sup>6p<sup>4</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="85">
+
+        <elementid>85</elementid>
+
+        <elementname>砹</elementname>
+
+        <symbol>At</symbol>
+
+        <atomicnumber>85</atomicnumber>
+
+        <position>第六周期第ⅦA族</position>
+
+        <atomicmass>210  </atomicmass>
+
+        <englishname>astatine</englishname>
+
+        <pinyin>ài</pinyin>
+
+        <types>卤素</types>
+
+        <configuration><![CDATA[4f<sup>14</sup>5d<sup>10</sup>6s<sup>2</sup>6p<sup>5</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="86">
+
+        <elementid>86</elementid>
+
+        <elementname>氡</elementname>
+
+        <symbol>Rn</symbol>
+
+        <atomicnumber>86</atomicnumber>
+
+        <position>第六周期第0族</position>
+
+        <atomicmass>222  </atomicmass>
+
+        <englishname>radon</englishname>
+
+        <pinyin>dōng</pinyin>
+
+        <types>惰性气体</types>
+
+        <configuration><![CDATA[4f<sup>14</sup>5d<sup>10</sup>6s<sup>2</sup>6p<sup>6</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="87">
+
+        <elementid>87</elementid>
+
+        <elementname>钫</elementname>
+
+        <symbol>Fr</symbol>
+
+        <atomicnumber>87</atomicnumber>
+
+        <position>第七周期第ⅠA族</position>
+
+        <atomicmass>223  </atomicmass>
+
+        <englishname>francium</englishname>
+
+        <pinyin>fāng</pinyin>
+
+        <types>碱金属</types>
+
+        <configuration><![CDATA[7s<sup>1</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="88">
+
+        <elementid>88</elementid>
+
+        <elementname>镭</elementname>
+
+        <symbol>Ra</symbol>
+
+        <atomicnumber>88</atomicnumber>
+
+        <position>第七周期第ⅡA族</position>
+
+        <atomicmass>226  </atomicmass>
+
+        <englishname>radium</englishname>
+
+        <pinyin>léi</pinyin>
+
+        <types>碱土金属</types>
+
+        <configuration><![CDATA[7s<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="89">
+
+        <elementid>89</elementid>
+
+        <elementname>锕</elementname>
+
+        <symbol>Ac</symbol>
+
+        <atomicnumber>89</atomicnumber>
+
+        <position>第七周期第ⅢB族</position>
+
+        <atomicmass>227  </atomicmass>
+
+        <englishname>actinium</englishname>
+
+        <pinyin>ā</pinyin>
+
+        <types>锕系元素</types>
+
+        <configuration><![CDATA[6d<sup>1</sup>7s<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="90">
+
+        <elementid>90</elementid>
+
+        <elementname>钍</elementname>
+
+        <symbol>Th</symbol>
+
+        <atomicnumber>90</atomicnumber>
+
+        <position>第七周期第ⅢB族</position>
+
+        <atomicmass>223.0  </atomicmass>
+
+        <englishname>thorium</englishname>
+
+        <pinyin>tǔ</pinyin>
+
+        <types>锕系元素</types>
+
+        <configuration><![CDATA[6d<sup>2</sup>7s<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="91">
+
+        <elementid>91</elementid>
+
+        <elementname>镤</elementname>
+
+        <symbol>Pa</symbol>
+
+        <atomicnumber>91</atomicnumber>
+
+        <position>第七周期第ⅢB族</position>
+
+        <atomicmass>231.0  </atomicmass>
+
+        <englishname>protactinium</englishname>
+
+        <pinyin>pú</pinyin>
+
+        <types>锕系元素</types>
+
+        <configuration><![CDATA[7s<sup>2</sup>6d<sup>1</sup>5f<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="92">
+
+        <elementid>92</elementid>
+
+        <elementname>铀</elementname>
+
+        <symbol>U</symbol>
+
+        <atomicnumber>92</atomicnumber>
+
+        <position>第七周期第ⅢB族</position>
+
+        <atomicmass>238.0  </atomicmass>
+
+        <englishname>uranium</englishname>
+
+        <pinyin>yóu</pinyin>
+
+        <types>锕系元素</types>
+
+        <configuration><![CDATA[5f<sup>3</sup>6d<sup>1</sup>7s<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="93">
+
+        <elementid>93</elementid>
+
+        <elementname>镎</elementname>
+
+        <symbol>Np</symbol>
+
+        <atomicnumber>93</atomicnumber>
+
+        <position>第七周期第ⅢB族</position>
+
+        <atomicmass>237  </atomicmass>
+
+        <englishname>neptunium</englishname>
+
+        <pinyin>ná</pinyin>
+
+        <types>锕系元素</types>
+
+        <configuration><![CDATA[7s<sup>2</sup>6d<sup>1</sup>5f<sup>4</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="94">
+
+        <elementid>94</elementid>
+
+        <elementname>钚</elementname>
+
+        <symbol>Pu</symbol>
+
+        <atomicnumber>94</atomicnumber>
+
+        <position>第七周期第ⅢB族</position>
+
+        <atomicmass>244  </atomicmass>
+
+        <englishname>plutonium</englishname>
+
+        <pinyin>bù</pinyin>
+
+        <types>锕系元素</types>
+
+        <configuration><![CDATA[5f<sup>6</sup>7s<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="95">
+
+        <elementid>95</elementid>
+
+        <elementname>镅</elementname>
+
+        <symbol>Am</symbol>
+
+        <atomicnumber>95</atomicnumber>
+
+        <position>第七周期第ⅢB族</position>
+
+        <atomicmass>243  </atomicmass>
+
+        <englishname>americium</englishname>
+
+        <pinyin>méi</pinyin>
+
+        <types>锕系元素</types>
+
+        <configuration><![CDATA[5f<sup>7</sup>7s<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="96">
+
+        <elementid>96</elementid>
+
+        <elementname>锔</elementname>
+
+        <symbol>Cm</symbol>
+
+        <atomicnumber>96</atomicnumber>
+
+        <position>第七周期第ⅢB族</position>
+
+        <atomicmass>243  </atomicmass>
+
+        <englishname>curium</englishname>
+
+        <pinyin>jū</pinyin>
+
+        <types>锕系元素</types>
+
+        <configuration><![CDATA[5f<sup>7</sup>6d<sup>1</sup>7s<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="97">
+
+        <elementid>97</elementid>
+
+        <elementname>锫</elementname>
+
+        <symbol>Bk</symbol>
+
+        <atomicnumber>97</atomicnumber>
+
+        <position>第七周期第ⅢB族</position>
+
+        <atomicmass>247  </atomicmass>
+
+        <englishname>berkelium</englishname>
+
+        <pinyin>péi</pinyin>
+
+        <types>锕系元素</types>
+
+        <configuration><![CDATA[5f<sup>9</sup>7s<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="98">
+
+        <elementid>98</elementid>
+
+        <elementname>锎</elementname>
+
+        <symbol>Cf</symbol>
+
+        <atomicnumber>98</atomicnumber>
+
+        <position>第七周期第ⅢB族</position>
+
+        <atomicmass>251  </atomicmass>
+
+        <englishname>californium</englishname>
+
+        <pinyin>kāi</pinyin>
+
+        <types>锕系元素</types>
+
+        <configuration><![CDATA[5f<sup>10</sup>7s<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="99">
+
+        <elementid>99</elementid>
+
+        <elementname>锿</elementname>
+
+        <symbol>Es</symbol>
+
+        <atomicnumber>99</atomicnumber>
+
+        <position>第七周期第ⅢB族</position>
+
+        <atomicmass>252  </atomicmass>
+
+        <englishname>einsteinium</englishname>
+
+        <pinyin>āi</pinyin>
+
+        <types>锕系元素</types>
+
+        <configuration><![CDATA[5f<sup>11</sup>7s<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="100">
+
+        <elementid>100</elementid>
+
+        <elementname>镄</elementname>
+
+        <symbol>Fm</symbol>
+
+        <atomicnumber>100</atomicnumber>
+
+        <position>第七周期第ⅢB族</position>
+
+        <atomicmass>257  </atomicmass>
+
+        <englishname>fermium</englishname>
+
+        <pinyin>fèi</pinyin>
+
+        <types>锕系元素</types>
+
+        <configuration><![CDATA[5f<sup>12</sup>7s<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="101">
+
+        <elementid>101</elementid>
+
+        <elementname>钔</elementname>
+
+        <symbol>Md</symbol>
+
+        <atomicnumber>101</atomicnumber>
+
+        <position>第七周期第ⅢB族</position>
+
+        <atomicmass>258  </atomicmass>
+
+        <englishname>mendelevium</englishname>
+
+        <pinyin>mén</pinyin>
+
+        <types>锕系元素</types>
+
+        <configuration><![CDATA[5f<sup>13</sup>7s<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="102">
+
+        <elementid>102</elementid>
+
+        <elementname>锘</elementname>
+
+        <symbol>No</symbol>
+
+        <atomicnumber>102</atomicnumber>
+
+        <position>第七周期第ⅢB族</position>
+
+        <atomicmass>259  </atomicmass>
+
+        <englishname>nobelium</englishname>
+
+        <pinyin>nuò</pinyin>
+
+        <types>锕系元素</types>
+
+        <configuration><![CDATA[5f<sup>14</sup>7s<sup>2</sup>]]></configuration>
+
+    </element>
+
+
+    <element id="103">
+
+        <elementid>103</elementid>
+
+        <elementname>铹</elementname>
+
+        <symbol>Lr</symbol>
+
+        <atomicnumber>103</atomicnumber>
+
+        <position>第七周期第ⅢB族</position>
+
+        <atomicmass>262  </atomicmass>
+
+        <englishname>lawrencium</englishname>
+
+        <pinyin>láo</pinyin>
+
+        <types>锕系元素</types>
+
+        <configuration><![CDATA[5f<sup>14</sup>7s<sup>2</sup>7p<sup>1</sup>]]></configuration>
+
+    </element>
+
+    <element id="104">
+
+        <elementid>104</elementid>
+
+        <elementname>鈩</elementname>
+
+        <symbol>Rf</symbol>
+
+        <atomicnumber>104</atomicnumber>
+
+        <position>第七周期第ⅣB族</position>
+
+        <atomicmass>262  </atomicmass>
+
+        <englishname>rutherford</englishname>
+
+        <pinyin>lú</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[5f<sup>14</sup>6d<sup>2</sup>7s<sup>2</sup>]]></configuration>
+
+    </element>
+
+    <element id="105">
+
+        <elementid>105</elementid>
+
+        <elementname>(钅杜)</elementname>
+
+        <symbol>Db</symbol>
+
+        <atomicnumber>105</atomicnumber>
+
+        <position>第七周期第ⅤB族</position>
+
+        <atomicmass>（262）</atomicmass>
+
+        <englishname>dubnium</englishname>
+
+        <pinyin>dù</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[5f<sup>14</sup>6d<sup>3</sup>7s<sup>2</sup>]]></configuration>
+
+    </element>
+
+    <element id="106">
+
+        <elementid>106</elementid>
+
+        <elementname>(钅喜)</elementname>
+
+        <symbol>Sg</symbol>
+
+        <atomicnumber>106</atomicnumber>
+
+        <position>第七周期第ⅥB族</position>
+
+        <atomicmass>（266）</atomicmass>
+
+        <englishname>Seaborgium</englishname>
+
+        <pinyin>xǐ</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[7s<sup>2</sup>5f<sup>14</sup>6d<sup>4</sup>]]></configuration>
+
+    </element>
+
+    <element id="107">
+
+        <elementid>107</elementid>
+
+        <elementname>(钅波)</elementname>
+
+        <symbol>Bh</symbol>
+
+        <atomicnumber>107</atomicnumber>
+
+        <position>第七周期第ⅦB族</position>
+
+        <atomicmass>（264）</atomicmass>
+
+        <englishname>bohrium</englishname>
+
+        <pinyin>bō</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[5f<sup>14</sup>6d<sup>5</sup>7s<sup>2</sup>]]></configuration>
+
+    </element>
+
+    <element id="108">
+
+        <elementid>108</elementid>
+
+        <elementname>(钅黑)</elementname>
+
+        <symbol>Hs</symbol>
+
+        <atomicnumber>108</atomicnumber>
+
+        <position>第七周期第ⅧB族</position>
+
+        <atomicmass>（277）</atomicmass>
+
+        <englishname>hassium</englishname>
+
+        <pinyin>hēi</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[5f<sup>14</sup>6d<sup>6</sup>7s<sup>2</sup>]]></configuration>
+
+    </element>
+
+    <element id="109">
+
+        <elementid>109</elementid>
+
+        <elementname>(钅麦)</elementname>
+
+        <symbol>Mt</symbol>
+
+        <atomicnumber>109</atomicnumber>
+
+        <position>第七周期第ⅧB族</position>
+
+        <atomicmass>（268）</atomicmass>
+
+        <englishname>meitnerium</englishname>
+
+        <pinyin>mài</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration></configuration>
+    </element>
+
+    <element id="110">
+
+        <elementid>110</elementid>
+
+        <elementname>鐽</elementname>
+
+        <symbol>Ds</symbol>
+
+        <atomicnumber>110</atomicnumber>
+
+        <position>第七周期第ⅧB族</position>
+
+        <atomicmass>（281）</atomicmass>
+
+        <englishname>darmstadtium</englishname>
+
+        <pinyin>dá</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration></configuration>
+
+    </element>
+
+    <element id="111">
+
+        <elementid>111</elementid>
+
+        <elementname>錀</elementname>
+
+        <symbol>Rg</symbol>
+
+        <atomicnumber>111</atomicnumber>
+
+        <position>第七周期第ⅠB族</position>
+
+        <atomicmass>（272）</atomicmass>
+
+        <englishname>roentgenium</englishname>
+
+        <pinyin>lún</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[5f<sup>14</sup>6d<sup>10</sup>7s<sup>1</sup>]]></configuration>
+
+    </element>
+
+    <element id="112">
+
+        <elementid>112</elementid>
+
+        <elementname>鎶</elementname>
+
+        <symbol>Cn</symbol>
+
+        <atomicnumber>112</atomicnumber>
+
+        <position>第七周期第ⅡB族</position>
+
+        <atomicmass>（285）</atomicmass>
+
+        <englishname>Copernicium</englishname>
+
+        <pinyin>lún</pinyin>
+
+        <types>过渡金属</types>
+
+        <configuration><![CDATA[5f<sup>14</sup>6d<sup>10</sup>7s<sup>2</sup>]]></configuration>
+
+    </element>
+
+    <element id="113">
+
+        <elementid>113</elementid>
+
+        <elementname>Uut</elementname>
+
+        <symbol>Uut</symbol>
+
+        <atomicnumber>113</atomicnumber>
+
+        <position>第七周期第ⅢA族</position>
+
+        <atomicmass>（286）</atomicmass>
+
+        <englishname>Ununtrium</englishname>
+
+        <pinyin></pinyin>
+
+        <types>主族金属</types>
+
+        <configuration></configuration>
+
+    </element>
+
+    <element id="114">
+
+        <elementid>114</elementid>
+
+        <elementname>Fl</elementname>
+
+        <symbol>Fl</symbol>
+
+        <atomicnumber>114</atomicnumber>
+
+        <position>第七周期第ⅣA族</position>
+
+        <atomicmass>（289）</atomicmass>
+
+        <englishname>Flerovium</englishname>
+
+        <pinyin></pinyin>
+
+        <types>主族金属</types>
+
+        <configuration></configuration>
+
+    </element>
+
+    <element id="115">
+
+        <elementid>115</elementid>
+
+        <elementname>Uup</elementname>
+
+        <symbol>Uup</symbol>
+
+        <atomicnumber>115</atomicnumber>
+
+        <position>第七周期第ⅤA族</position>
+
+        <atomicmass>（291）</atomicmass>
+
+        <englishname>Ununpentium</englishname>
+
+        <pinyin></pinyin>
+
+        <types>主族金属</types>
+
+        <configuration></configuration>
+
+    </element>
+
+    <element id="116">
+
+        <elementid>116</elementid>
+
+        <elementname>Lv</elementname>
+
+        <symbol>Lv</symbol>
+
+        <atomicnumber>116</atomicnumber>
+
+        <position>第七周期第ⅥA族</position>
+
+        <atomicmass>（293）</atomicmass>
+
+        <englishname>Livermorium</englishname>
+
+        <pinyin></pinyin>
+
+        <types>主族金属</types>
+
+        <configuration></configuration>
+
+    </element>
+
+    <element id="117">
+
+        <elementid>117</elementid>
+
+        <elementname>Uus</elementname>
+
+        <symbol>Uus</symbol>
+
+        <atomicnumber>117</atomicnumber>
+
+        <position>第七周期第ⅦA族</position>
+
+        <atomicmass>（294）</atomicmass>
+
+        <englishname>Ununseptium</englishname>
+
+        <pinyin></pinyin>
+
+        <types>未知元素</types>
+
+        <configuration></configuration>
+
+    </element>
+
+    <element id="118">
+
+        <elementid>118</elementid>
+
+        <elementname>Uuo</elementname>
+
+        <symbol>Uuo</symbol>
+
+        <atomicnumber>118</atomicnumber>
+
+        <position>第七周期第0族</position>
+
+        <atomicmass>（294）</atomicmass>
+
+        <englishname>Ununoctium</englishname>
+
+        <pinyin></pinyin>
+
+        <types>惰性气体</types>
+
+        <configuration></configuration>
+
+    </element>
+
+
+
+</elements>
