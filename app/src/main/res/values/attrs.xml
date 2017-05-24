@@ -7,4 +7,7 @@
         <attr name="row_count" format="integer"></attr>
         <attr name="column_divider_first" format="boolean"></attr>
     </declare-styleable>
+    <declare-styleable name="HorizontalScrollView">
+        <attr name="fillViewport" format="boolean"></attr>
+    </declare-styleable>
 </resources>
