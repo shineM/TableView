@@ -12,40 +12,61 @@ import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import me.texy.tableview.DividerGenerator;
-import me.texy.tableview.Interval;
-import me.texy.tableview.TableItem;
-import me.texy.tableview.TableLayout;
+import me.texy.tableview.demo.tableview.TableLayout;
 
 import static android.hardware.Sensor.TYPE_ORIENTATION;
 
-public class MainActivity extends BaseActivity implements SensorEventListener{
+public class MainActivity extends BaseActivity {
 
     TableLayout tableLayout;
-    private static int[] intervals = new int[]{43, 25, 7, 8, 40, 20, 33};
 
     @RequiresApi(api = Build.VERSION_CODES.CUPCAKE)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        tableLayout = (TableLayout) findViewById(R.id.table_layout);
         setContentView(R.layout.activity_main);
+        tableLayout = (TableLayout) findViewById(R.id.table_layout);
         initView();
-        SensorManager sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
-        SensorManager.getOrientation()
-        sensorManager.registerListener(this,sensorManager.getDefaultSensor(TYPE_ORIENTATION),SensorManager.SENSOR_DELAY_NORMAL);
+        TableLayout.DividerGenerator dividerGenerator = new TableLayout.DividerGenerator() {
+            @Override
+            public int[] generateDivider(int index) {
+                return new int[]{dp2px(context, 1), Color.GRAY};
+            }
+        };
+        tableLayout.setRowDividerGenerator(dividerGenerator);
+        tableLayout.setColumnDividerGenerator(dividerGenerator);
+        tableLayout.addItems(mockItems());
+    }
+
+    private List<? extends TableLayout.TableItem> mockItems() {
+        List<NormalTableItem> itemList = new ArrayList<>();
+        for (int i = 0; i < 7; i++) {
+            for (int j = 0; j < 7; j++) {
+                NormalTableItem item = new NormalTableItem();
+                item.setColumnIndex(i);
+                item.setInterval(new TableLayout.Interval(j, j));
+                if (i == 0 && j == 0) {
+                    item.setValue("");
+                } else if (i == 0) {
+                    item.setValue("Student " + j);
+                } else if (j == 0) {
+                    item.setValue("Subject " + i);
+                } else {
+                    item.setValue(" " + (i * j + 50));
+                }
+                itemList.add(item);
+            }
+        }
+        return itemList;
     }
 
     @Override
@@ -70,21 +91,14 @@ public class MainActivity extends BaseActivity implements SensorEventListener{
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    public void onSensorChanged(SensorEvent event) {
-        event.values
-    }
+    private class NormalTableItem extends TableLayout.TableItem {
 
-    @Override
-    public void onAccuracyChanged(Sensor sensor, int accuracy) {
-
-    }
-
-    private class MyTableItem extends TableItem {
         @Override
         public View initView() {
-            View view = LayoutInflater.from(MainActivity.this).inflate(R.layout.table_item, null);
-
+            View view = LayoutInflater.from(MainActivity.this)
+                    .inflate(R.layout.normal_table_item, null);
+            TextView textView = (TextView) view.findViewById(R.id.item_text);
+            textView.setText(getValue().toString());
             return view;
         }
     }

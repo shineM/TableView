@@ -1,1 +1,1 @@
-include ':app', ':tableview_lib'
+include ':app'

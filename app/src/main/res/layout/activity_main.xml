@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -13,8 +13,11 @@
         android:elevation="5dp"
         android:background="#ffffff"></android.support.v7.widget.Toolbar>
 
-    <me.texy.tableview.TableLayout
+    <me.texy.tableview.demo.tableview.TableLayout
         android:id="@+id/table_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></me.texy.tableview.TableLayout>
+        android:layout_height="wrap_content"
+        app:column_count="7"
+        app:item_height="50dp"
+        app:row_count="7"></me.texy.tableview.demo.tableview.TableLayout>
 </LinearLayout>

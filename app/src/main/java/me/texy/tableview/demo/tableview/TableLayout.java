@@ -1,9 +1,8 @@
-package me.texy.tableview;
+package me.texy.tableview.demo.tableview;
 
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
@@ -12,27 +11,21 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
+import me.texy.tableview.demo.R;
 
-import static me.texy.tableview.TableLayout.DividerInfo.DIVIDER_COLOR_INDEX;
-import static me.texy.tableview.TableLayout.DividerInfo.DIVIDER_WIDTH_INDEX;
+import static me.texy.tableview.demo.tableview.TableLayout.DividerInfo.DIVIDER_COLOR_INDEX;
+import static me.texy.tableview.demo.tableview.TableLayout.DividerInfo.DIVIDER_WIDTH_INDEX;
 
 /**
  * Created by xinyuanzhong on 2017/5/5.
  */
 
 public class TableLayout extends ViewGroup {
-    private static final int DEFAULT_COLUMN_COUNT = 7;
     private static final int DEFAULT_ROW_COUNT = 12;
-    private static final int DEFAULT_ITEM_WIDTH = 30;
-    private static final int DEFAULT_ITEM_HEIGHT = 30;
-    private static final int DEFAULT_COLUMN_Divider = 0;
-    private static final int DEFAULT_ROW_Divider = 0;
+    private static final int DEFAULT_COLUMN_COUNT = 7;
 
-    private Context context;
-
-    private DividerGenerator rowDividerGenerator;
-
-    private DividerGenerator columnDividerGenerator;
+    private static final int DEFAULT_ITEM_WIDTH = 60;
+    private static final int DEFAULT_ITEM_HEIGHT = 60;
 
     private DividerInfo dividerInfo = new DividerInfo();
 
@@ -50,25 +43,23 @@ public class TableLayout extends ViewGroup {
 
     private boolean drawColumnDividerFirst;
 
-    private boolean drawColumnEdgeDivider = true;
-
-    private boolean drawRowEdgeDivider = true;
-
     private Paint dividerPaint = new Paint();
 
-    public void setRowDividerGenerator(DividerGenerator rowDividerGenerator) {
-        this.rowDividerGenerator = rowDividerGenerator;
-        dividerInfo.prepareDividers(Axis.Y, rowDividerGenerator);
-    }
+    private boolean specificItemWidth;
 
-    public void setColumnDividerGenerator(DividerGenerator columnDividerGenerator) {
-        this.columnDividerGenerator = columnDividerGenerator;
-        dividerInfo.prepareDividers(Axis.X, columnDividerGenerator);
-    }
+    private boolean specificItemHeight;
 
     enum Axis {
         Y,
         X
+    }
+
+    public void setRowDividerGenerator(DividerGenerator rowDividerGenerator) {
+        dividerInfo.prepareDividers(Axis.Y, rowDividerGenerator);
+    }
+
+    public void setColumnDividerGenerator(DividerGenerator columnDividerGenerator) {
+        dividerInfo.prepareDividers(Axis.X, columnDividerGenerator);
     }
 
     public TableLayout(Context context) {
@@ -81,16 +72,14 @@ public class TableLayout extends ViewGroup {
 
     public TableLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        this.context = context;
 
         TypedArray typedArray = context.
                 obtainStyledAttributes(attrs, R.styleable.TableLayout, defStyleAttr, 0);
         itemWidth = typedArray.
-                getDimensionPixelSize(R.styleable.TableLayout_item_width,
-                        Utils.dp2px(context, DEFAULT_ITEM_WIDTH));
+                getDimensionPixelSize(R.styleable.TableLayout_item_width, 0);
+
         itemHeight = typedArray.
-                getDimensionPixelSize(R.styleable.TableLayout_item_height,
-                        Utils.dp2px(context, DEFAULT_ITEM_HEIGHT));
+                getDimensionPixelSize(R.styleable.TableLayout_item_height, 0);
         columnCount = typedArray.
                 getInteger(R.styleable.TableLayout_column_count, DEFAULT_COLUMN_COUNT);
         rowCount = typedArray.
@@ -100,6 +89,9 @@ public class TableLayout extends ViewGroup {
 
         dividerInfo.init();
         dividerPaint.setAntiAlias(true);
+
+        specificItemWidth = itemWidth != 0;
+        specificItemHeight = itemHeight != 0;
 
         setWillNotDraw(false);
 
@@ -113,16 +105,30 @@ public class TableLayout extends ViewGroup {
         int widthMode = MeasureSpec.getMode(widthMeasureSpec);
         int heightMode = MeasureSpec.getMode(heightMeasureSpec);
 
-        for (TableItem item : tableItems) {
-            View child = item.getView();
-            //If you has assigned the width of TableLayout（match_parent or specific dimension,
-            // then the attr itemWidth will not work
+        //If you did not assign the width or height of item then the attr
+        // itemWidth or itemHeight will calculated by layout size or use default size.
+        if (!specificItemWidth) {
             if (widthMode == MeasureSpec.EXACTLY) {
                 itemWidth = (((widthSize - getPaddingLeft() - getPaddingRight())
                         - dividerInfo.columnDividersWidth)) / columnCount;
+            } else {
+                itemWidth = DEFAULT_ITEM_WIDTH;
             }
-            measureChild(child,
-                    MeasureSpec.makeMeasureSpec((int) itemWidth, MeasureSpec.EXACTLY),
+        }
+        if (!specificItemHeight) {
+            if (heightMode == MeasureSpec.EXACTLY) {
+                itemHeight = (((heightSize - getPaddingTop() - getPaddingBottom())
+                        - dividerInfo.rowDividersWidth)) / rowCount;
+            } else {
+                itemHeight = DEFAULT_ITEM_HEIGHT;
+            }
+        }
+
+
+        for (TableItem item : tableItems) {
+            View child = item.getView();
+
+            child.measure(MeasureSpec.makeMeasureSpec((int) itemWidth, MeasureSpec.EXACTLY),
                     MeasureSpec.makeMeasureSpec((int) getItemVerticalHeight(item), MeasureSpec.EXACTLY));
         }
 
@@ -158,11 +164,10 @@ public class TableLayout extends ViewGroup {
             double topOfIndex = getTopOfIndex(tableItem.getInterval().getStartIndex());
 
             int left = (int) getLeftOfIndex(tableItem.getColumnIndex());
-            int right = (int) (left + itemWidth);
             int top = (int) topOfIndex;
-            int bottom = (int) (topOfIndex + getItemVerticalHeight(tableItem));
 
-            tableItem.getView().layout(left, top, right, bottom);
+            tableItem.getView().layout(left, top, left + tableItem.getView().getMeasuredWidth(),
+                    top + tableItem.getView().getMeasuredHeight());
         }
     }
 
@@ -180,16 +185,43 @@ public class TableLayout extends ViewGroup {
         if (tableItems == null) {
             tableItems = new ArrayList<>();
         }
-        tableItems.add(tableItem);
-        addView(tableItem.getView());
+        if (!tableItems.contains(tableItem)) {
+            tableItems.add(tableItem);
+            View view = tableItem.getView();
+            if (view.getParent() != null) {
+                ((ViewGroup) view.getParent()).removeView(view);
+            }
+            if (indexOfChild(view) == -1) {
+                addView(view);
+            }
+        } else {
+            requestLayout();
+        }
     }
 
-    public void addItems(List<TableItem> tableItems) {
-        if (this.tableItems == null) {
-            this.tableItems = new ArrayList<>();
+    public void addItems(List<? extends TableItem> tableItemList) {
+        if (tableItemList == null) {
+            return;
         }
-        this.tableItems.addAll(tableItems);
-        for (TableItem item : tableItems) {
+        if (tableItems == null) {
+            tableItems = new ArrayList<>();
+        }
+
+        for (TableItem item : tableItemList) {
+            addItem(item);
+        }
+    }
+
+    public void resetItems(List<? extends TableItem> tableItemList) {
+        if (tableItemList == null) {
+            return;
+        }
+        tableItems.clear();
+        removeAllViews();
+
+        for (TableItem item : tableItemList) {
+            tableItems.add(item);
+            item.setView(null);
             addView(item.getView());
         }
     }
@@ -282,7 +314,6 @@ public class TableLayout extends ViewGroup {
         }
 
         public void init() {
-            // TODO: 2017/5/10 add default size of divider
             columnDividers = new int[columnCount + 1][2];
             rowDividers = new int[rowCount + 1][2];
 
@@ -295,9 +326,81 @@ public class TableLayout extends ViewGroup {
             prepareDividers(Axis.Y, new DividerGenerator() {
                 @Override
                 public int[] generateDivider(int index) {
-                    return new int[]{1, Color.parseColor("#efefef")};
+                    return new int[]{0, 0};
                 }
             });
+        }
+    }
+
+    public interface DividerGenerator {
+        //return the divider info before index
+        //[width][color]
+        int[] generateDivider(int index);
+    }
+
+    public static class Interval {
+        private int startIndex;
+
+        private int endIndex;
+
+        public Interval(int startIndex, int endIndex) {
+            this.startIndex = startIndex;
+            this.endIndex = endIndex;
+        }
+
+        public int getStartIndex() {
+            return startIndex;
+        }
+
+        public int getEndIndex() {
+            return endIndex;
+        }
+    }
+
+    public abstract static class TableItem {
+        private int columnIndex;
+
+        private Interval interval = new Interval(0, 5);
+
+        private Object value;
+
+        private View view;
+
+        public int getColumnIndex() {
+            return columnIndex;
+        }
+
+        public void setColumnIndex(int columnIndex) {
+            this.columnIndex = columnIndex;
+        }
+
+        public Interval getInterval() {
+            return interval;
+        }
+
+        public void setInterval(Interval interval) {
+            this.interval = interval;
+        }
+
+        public Object getValue() {
+            return value;
+        }
+
+        public void setValue(Object value) {
+            this.value = value;
+        }
+
+        public View getView() {
+            if (view == null) {
+                view = initView();
+            }
+            return view;
+        }
+
+        public abstract View initView();
+
+        public void setView(View view) {
+            this.view = view;
         }
     }
 }
