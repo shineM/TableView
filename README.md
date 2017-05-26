@@ -3,103 +3,15 @@ This project is made for showing how to write a table view quickly.
 Considering the uncertainty demand of table and reducing the dependencies in your project, 
 this custom view has no maven or jcenter dependency for you,just copy [TableLayout.java](https://github.com/shineM/TableView/tree/master/app/src/main/java/me/texy/tableview/demo/tableview)
 and [attrs.xml](https://github.com/shineM/TableView/blob/master/app/src/main/res/values/attrs.xml) to your project，then rewrite or enjoy it.
+You can check out the demo for more detail usage.
 
 ### Captures
-There are some gifs from Demo:
+There are some captures from Demo:
 
-* Normal table:
+<img src='screenshots/normal_table.png' width='240'/> <img src='screenshots/schedule_table.png' width='240'/>
 
-<img src='screenshots/normal_table.png width='240'/>
+<img src='screenshots/elements_table.png' width='480'/>
 
-* Elements table:
-
-<img src='screenshots/elements_table.png width='240'/>
-
-* Schedule table:
-
-<img src='screenshots/schedule_table.png width='240'/>
-
-### Features
-- expandAll/collapseAll
-- expandNode/collapseNode
-- expandLevel/collapseLevel
-- toggleNode
-- deleteNode/addNode
-- selectNode/deselectNode
-- selectAll/deselectAll
-- getAllSelectedNodes
-
-### Usage
-**1.Reference the library from your module's build.gradle:**
-```groovy
-compile 'me.texy.treeview:treeview_lib:1.0.3'
-```
-**2.Implement your all level's BaseNodeViewBinder**
-
-Sample：
-```java
-public class FirstLevelNodeViewBinder extends BaseNodeViewBinder {
-  TextView textView;
-  public FirstLevelNodeViewBinder(View itemView) { 
-    super(itemView);  
-    textView = (TextView) itemView.findViewById(R.id.node_name_view)
-  }
-  
-  @Override
-  public int getLayoutId() {
-    return R.layout.item_first_level;
-  }
-  
-  @Override
-  public void bindView(TreeNode treeNode) {
-    textView.setText(treeNode.getValue().toString());
-  }
-}
-
-SecondLevelNodeViewBinder
-ThirdLevelNodeViewBinder
-.
-.
-.
-```
-If you want add the selectable feature,replace BaseNodeViewBinder with CheckableNodeViewBinder.
-
-**3.Implement the BaseNodeViewFactory**
-
-Sample：
-```java
-public class MyNodeViewFactory extends BaseNodeViewFactory {
-  @Override
-  public BaseNodeViewBinder getNodeViewBinder(View view, int level) {
-    switch (level) {
-      case 0:
-        return new FirstLevelNodeViewBinder(view);
-      case 1:
-        return new SecondLevelNodeViewBinder(view);
-      case 2:
-        return new ThirdLevelNodeViewBinder(view);
-      default:
-        return null;
-    }
-  }
-}
-```
-If you do not want to create a class file,just implement a anonymous inner class in TreeView's constructor
-
-**4.Add TreeView to wherever you want**
-
-Sample:
-```java
-TreeNode root = TreeNode.root();
-//build the tree as you want
-for (int i = 0; i < 5; i++) {
-  TreeNode treeNode = new TreeNode(new String("Child " + "No." + i));
-  treeNode.setLevel(0);
-  root.addChild(treeNode);
-}
-View treeView = new TreeView(root, context, new MyNodeViewFactory()).getView();
-//add to view group where you want 
-```
 
 ### License
 
