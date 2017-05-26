@@ -3,8 +3,13 @@ package me.texy.tableview.demo;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.os.Build;
 import android.support.annotation.NonNull;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -24,18 +29,23 @@ import me.texy.tableview.Interval;
 import me.texy.tableview.TableItem;
 import me.texy.tableview.TableLayout;
 
+import static android.hardware.Sensor.TYPE_ORIENTATION;
 
-public class MainActivity extends BaseActivity {
+public class MainActivity extends BaseActivity implements SensorEventListener{
 
     TableLayout tableLayout;
     private static int[] intervals = new int[]{43, 25, 7, 8, 40, 20, 33};
 
+    @RequiresApi(api = Build.VERSION_CODES.CUPCAKE)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         tableLayout = (TableLayout) findViewById(R.id.table_layout);
         setContentView(R.layout.activity_main);
         initView();
+        SensorManager sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
+        SensorManager.getOrientation()
+        sensorManager.registerListener(this,sensorManager.getDefaultSensor(TYPE_ORIENTATION),SensorManager.SENSOR_DELAY_NORMAL);
     }
 
     @Override
@@ -58,6 +68,16 @@ public class MainActivity extends BaseActivity {
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onSensorChanged(SensorEvent event) {
+        event.values
+    }
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+
     }
 
     private class MyTableItem extends TableItem {
